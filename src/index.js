@@ -1,7 +1,7 @@
 module.exports = function solveEquation(equation) {
   let [a, b, c] = equation
       .match( /([-+]|^) ?\d+/g )
-      .map( item => parseFloat(item.replace(' ', '')) );
+      .map( item => item.replace(' ', '') );
 
   let D = Math.pow(b, 2) - 4 * a * c;
 
